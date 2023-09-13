@@ -2,6 +2,7 @@ import Image from 'next/image'
 import threads from '@/assets/threads.svg'
 import {HomeIcon, Search, PenSquare, Heart, User} from 'lucide-react'
 import Link from 'next/link'
+import DropdownMenuHome from './dropdown'
 
 const menus = [
   {
@@ -47,6 +48,7 @@ export default function Home() {
             ))
           }
         </ul>
+        <DropdownMenuHome/>
       </nav>
     </main>
   )
