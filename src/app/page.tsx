@@ -34,7 +34,6 @@ const menus = [
 export default function Home() {
   return (
     <main>
-
       <nav className='flex justify-between items-center py-1 px-6'>
       <Image src={threads} height={32} alt='Logo do Threads'/>
         <ul className='flex'>
