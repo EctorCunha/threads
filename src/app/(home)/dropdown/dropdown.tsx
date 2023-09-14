@@ -26,27 +26,33 @@ export default function DropdownMenuHome() {
       <DropdownMenuTrigger asChild>
         <Settings2 />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+      <DropdownMenuContent className="w-56 bg-black">
+        <DropdownMenuCheckboxItem
+          checked={showStatusBar}
+          onCheckedChange={setShowStatusBar}
+        >
+          Switch appearance
+        </DropdownMenuCheckboxItem>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
           checked={showStatusBar}
           onCheckedChange={setShowStatusBar}
         >
-          Status Bar
+          About
         </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
           checked={showActivityBar}
           onCheckedChange={setShowActivityBar}
-          disabled
         >
-          Activity Bar
+          Report a problem
         </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
           checked={showPanel}
           onCheckedChange={setShowPanel}
         >
-          Panel
+          Log out
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

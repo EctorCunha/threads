@@ -11,7 +11,7 @@ export default function HomePost() {
     <div className="flex justify-between items-center gap-3">
     <Avatar>
       <AvatarImage src="https://github.com/ectorcunha.png" alt="@ectorcunha" />
-      <AvatarFallback>CN</AvatarFallback>
+      <AvatarFallback>EC</AvatarFallback>
     </Avatar>
     <NewPost/>
 

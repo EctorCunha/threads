@@ -7,7 +7,8 @@
       "avatar username time"
       "separator post post"
       "separator actions ."
-      "reply_avatar likes_and_replies .";
+      "reply_avatar likes_and_replies ."
+      "bottomDivider bottomDivider bottomDivider";
   }
   
   .avatar { grid-area: avatar; }
@@ -32,3 +33,6 @@
   
   .likes_and_replies { grid-area: likes_and_replies; }
   
+  .bottomDivider{
+    grid-area: bottomDivider;
+  }
